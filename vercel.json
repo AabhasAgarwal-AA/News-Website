@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "newswebsite/wsgi.py",
+      "src": "newsapp/wsgi.py",
       "use": "@vercel/python",
       "config": { "maxLambdaSize": "15mb", "runtime": "python3.9" }
     },
@@ -21,7 +21,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "newswebsite/wsgi.py"
+      "dest": "newsapp/wsgi.py"
     }
   ]
 }
